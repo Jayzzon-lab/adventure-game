@@ -595,16 +595,3 @@ class TerrainGenerator:
 
             return Terrain(tuple(terr))
 
-specification = TerrainGenerationSpec(
-    rows=2,
-    columns=5,
-    min_open_tiles=6,
-    max_open_tiles=6,
-    topology=TerrainTopology.GENERAL,
-    max_attempts=3
-)
-
-generator = TerrainGenerator()
-terrain = generator.generate_terrain(specification, seed=11)
-
-print(terrain.terrain_rows)
