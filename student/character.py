@@ -9,7 +9,7 @@ class Character:
         # Validate using public canonical values and retain your own state.
        
         charac = CharacterDefinition(agent_id.strip())
-        self._agent_id = charac
+        self._agent_id = charac.agent_id
         #raise NotImplementedError("TODO Character: implement __init__ and agent_id")
 
     @property
